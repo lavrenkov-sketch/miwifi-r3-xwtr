@@ -10,10 +10,10 @@ Includes support for PPPoE, WPA3, 3G/4G dongles (e.g. Huawei E3372), USB drives 
 Вам необходимо скачать релиз из данного репозитория (не нужно клонировать репозиторий, вам нужен только релиз)
 
 
-      Установка:
-      - Получаем доступ по SSH - [гайд](https://4pda.to/forum/index.php?s=&showtopic=736801&view=findpost&p=49333132)
-      - Скопировать файлы openwrt-xxx-kernel1.bin и openwrt-xxx-rootfs0.bin на флешку, отформатированную в FAT32. Для удобства можно их переименовать в kernel1.bin и rootfs0.bin. Вставить флешку в роутер.
-      - В консоли вводим:
+Установка:
+- Получаем доступ по SSH - [гайд](https://4pda.to/forum/index.php?s=&showtopic=736801&view=findpost&p=49333132)
+- Скопировать файлы openwrt-xxx-kernel1.bin и openwrt-xxx-rootfs0.bin на флешку, отформатированную в FAT32. Для удобства можно их переименовать в kernel1.bin и rootfs0.bin. Вставить флешку в роутер.
+- В консоли вводим:
 
       ```
       nvram set flag_last_success=1
@@ -26,6 +26,8 @@ Includes support for PPPoE, WPA3, 3G/4G dongles (e.g. Huawei E3372), USB drives 
       reboot
       ```
 
-      - Через несколько минут интерфейс будет доступен по адресу 192.168.15.1
-      - Последующие обновления файлом openwrt-xxx-sysupgrade.bin в интерфейсе во вкладке System -> Backup / Flash Firmware -> Flash new firmware image
-      - В случае неудачи - [возврат на сток через UART](https://4pda.to/forum/index.php?s=&showtopic=736801&view=findpost&p=50915904).
+Через несколько минут интерфейс будет доступен по адресу 192.168.15.1
+
+Последующие обновления файлом openwrt-xxx-sysupgrade.bin в интерфейсе во вкладке System -> Backup / Flash Firmware -> Flash new firmware image
+
+В случае неудачи - [возврат на сток через UART](https://4pda.to/forum/index.php?s=&showtopic=736801&view=findpost&p=50915904).
