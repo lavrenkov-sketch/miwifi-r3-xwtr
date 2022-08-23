@@ -15,7 +15,6 @@ Includes support for PPPoE, WPA3, 3G/4G dongles (e.g. Huawei E3372), USB drives 
 - Скопировать файлы openwrt-xxx-kernel1.bin и openwrt-xxx-rootfs0.bin на флешку, отформатированную в FAT32. Для удобства можно их переименовать в kernel1.bin и rootfs0.bin. Вставить флешку в роутер.
 - В консоли вводим:
 
-      ```
       nvram set flag_last_success=1
       nvram set boot_wait=on
       nvram set uart_en=1
@@ -24,7 +23,6 @@ Includes support for PPPoE, WPA3, 3G/4G dongles (e.g. Huawei E3372), USB drives 
       mtd write kernel1.bin kernel1
       mtd write rootfs0.bin rootfs0
       reboot
-      ```
 
 Через несколько минут интерфейс будет доступен по адресу 192.168.15.1
 
